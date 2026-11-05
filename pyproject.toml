@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "orbital-ink"
+version = "0.1.0"
+description = "Render signed Gaussian Cube fields as orbital isosurfaces."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.23", "Pillow>=9.2"]
+
+[project.scripts]
+orbital-ink = "orbital_ink.cli:main"
+
+[tool.setuptools]
+packages = ["orbital_ink"]
